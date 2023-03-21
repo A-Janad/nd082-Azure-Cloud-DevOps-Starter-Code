@@ -42,4 +42,4 @@ If it works you should be able to view the assigned policy using:
 ### Output
 **Azure Policy Output**
 You should see something like the screenshot below:
-![azure_policy_output](screenshots/azure_policy_output.png)
+![azure_policy_output](C:\Users\Ahmed.Aljanad\Desktop\Azure_Website\nd082-Azure-Cloud-DevOps-Starter-Code\C1 - Azure Infrastructure Operations\project\starter_files\screenshots\azure_policy_output.png)
