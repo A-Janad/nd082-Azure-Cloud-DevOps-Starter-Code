@@ -49,7 +49,7 @@ You should see something like the screenshot below:
 
     az ad sp create-for-rbac --query "{client_id:appid, client_secret:password, tenant_id: tenant}"
 
-    ***NOTE*** you can get your SUBSCRIPTION_ID using the following code:
+***NOTE*** you can get your SUBSCRIPTION_ID using the following code:
 
         az account show --query "{subscription_id : id}"
 
@@ -62,3 +62,15 @@ This command will output 4 values:
   "tenant": "00000000-0000-0000-0000-000000000000"
 }
 
+***Note*** You need next to map these values to the variables.json 
+
+
+**Create Resource Group**
+
+    az group create -l "LOCATION" -n "RESOURCE_GROUP_NAME" --tags "udacity"
+
+***NOTE*** change "LOCATION" string to your location, add a new value for "RESOURCE_GROUP_NAME" 
+
+You should see something like the screenshot below:
+
+![azure_policy_output](\screenshots\resource_group_output.png)
