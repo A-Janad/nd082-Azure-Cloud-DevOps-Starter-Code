@@ -18,35 +18,28 @@ For this project, you will write a Packer template and a Terraform template to d
 
 ### Instructions
 
-**Clone this repository**
-    ```
-        git clone https://github.com/magrathj/Azure-Devops-Deploying-Web-Service.git
+1- Clone this repository
+    git clone https://github.com/A-Janad/nd082-Azure-Cloud-DevOps-Starter-Code 
 
-    ```
-
-**Create an Azure Policy** 
+2- Create an Azure Policy
 
 Log into your Azure account
 
     az login 
-    az account set --subscription="SUBSCRIPTION_ID"
+
 The policy we will deploy will prevent any new resources from being created without the tag "Udacity".
 
-To run this, use the bash script below:
+To run this, use the bash script:
 
-    ./azure_policies/deploy_azure_policies.sh
+    ./azure_policy/azure_policies_start.sh
+
 If it works you should be able to view the assigned policy using:
 
     az policy assignment list
-You should see something like the screenshot below:
 
-Policy Screenshot
 
-Create Service Principle
-Create Service Principle
-
-    az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/SUBSCRIPTION_ID"
 
 ### Output
-**Your words here**
+**Azure Policy Output**
+You should see something like the screenshot below:
 
