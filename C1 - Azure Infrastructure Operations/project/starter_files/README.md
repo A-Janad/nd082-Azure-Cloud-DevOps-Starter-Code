@@ -44,3 +44,21 @@ If it works you should be able to view the assigned policy using:
 You should see something like the screenshot below:
 ![azure_policy_output](\screenshots\azure_policy_output.png)
 
+
+**Create Service Principle**
+
+    az ad sp create-for-rbac --query "{client_id:appid, client_secret:password, tenant_id: tenant}"
+
+    ***NOTE*** you can get your SUBSCRIPTION_ID using the following code:
+
+        az account show --query "{subscription_id : id}"
+
+This command will output 4 values:
+
+{
+  "appId": "00000000-0000-0000-0000-000000000000",
+  "displayName": "azure-cli-2023-03-21-13-16-10",
+  "password": "0000-0000-0000-0000-000000000000",
+  "tenant": "00000000-0000-0000-0000-000000000000"
+}
+
