@@ -64,7 +64,6 @@ This command will output 4 values:
 
 ***Note*** You need next to map these values to the variables.json 
 
-
 **Create Resource Group**
 
     az group create -l "LOCATION" -n "RESOURCE_GROUP_NAME" --tags "udacity"
