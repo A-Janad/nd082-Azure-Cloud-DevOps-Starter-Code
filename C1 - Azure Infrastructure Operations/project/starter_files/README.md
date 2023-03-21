@@ -56,6 +56,7 @@ You should see something like the screenshot below:
 This command will output 4 values:
 
 {
+
   "appId": "00000000-0000-0000-0000-000000000000",
 
   "displayName": "azure-cli-2023-03-21-13-16-10",
@@ -63,6 +64,7 @@ This command will output 4 values:
   "password": "0000-0000-0000-0000-000000000000",
   
   "tenant": "00000000-0000-0000-0000-000000000000"
+  
 }
 
 ***Note*** You need next to map these values to the variables.json 
