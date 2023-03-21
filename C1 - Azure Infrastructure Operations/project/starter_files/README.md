@@ -1,7 +1,7 @@
 # Azure Infrastructure Operations Project: Deploying a scalable IaaS web server in Azure
 
 ### Introduction
-For this project, you will write a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure.
+For this project, you will write a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure. The project also requires applying an Azure policy to stop the creation of any new resources that lack tags. Additionally, a VM image will be created using Packer to be used as the load balancer. Finally, the resources will be deployed in a scalable and immutable manner through Terraform.
 
 ### Getting Started
 1. Clone this repository
@@ -17,7 +17,35 @@ For this project, you will write a Packer template and a Terraform template to d
 4. Install [Terraform](https://www.terraform.io/downloads.html)
 
 ### Instructions
-**Your words here**
+
+**Clone this repository**
+    ```
+        git clone https://github.com/magrathj/Azure-Devops-Deploying-Web-Service.git
+
+    ```
+
+**Create an Azure Policy** 
+
+Log into your Azure account
+
+    az login 
+    az account set --subscription="SUBSCRIPTION_ID"
+The policy we will deploy will prevent any new resources from being created without the tag "Udacity".
+
+To run this, use the bash script below:
+
+    ./azure_policies/deploy_azure_policies.sh
+If it works you should be able to view the assigned policy using:
+
+    az policy assignment list
+You should see something like the screenshot below:
+
+Policy Screenshot
+
+Create Service Principle
+Create Service Principle
+
+    az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/SUBSCRIPTION_ID"
 
 ### Output
 **Your words here**
