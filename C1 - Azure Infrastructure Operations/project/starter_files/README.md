@@ -72,15 +72,22 @@ This command will output 4 values:
 variables.json
 
 {
-  "client_id": "",
-  "client_secret": "",
-  "subscription_id": "",
-  "tenant_id": "",
-  "resource_group_name": "",
-  "image_name": "",
-  "location": ""
-}
 
+  "client_id": "",
+
+  "client_secret": "",
+
+  "subscription_id": "",
+
+  "tenant_id": "",
+
+  "resource_group_name": "",
+
+  "image_name": "",
+
+  "location": ""
+
+}
 
 **5- Deploy your packer image**
 Run packer file
@@ -114,4 +121,4 @@ After running the plan you should see the resources that will be built:
 **Terraform apply output**
 After running apply you should see the terraform output:
 
-![resource_group_output](\screenshots\terraform_plan_output.png)
+![resource_group_output](\screenshots\terraform_apply_output.png)
