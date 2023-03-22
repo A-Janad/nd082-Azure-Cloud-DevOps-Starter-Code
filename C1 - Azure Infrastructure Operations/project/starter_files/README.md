@@ -105,7 +105,7 @@ Run packer file
 **Azure Policy Output**
 You should see something like the screenshot below:
 
-![azure_policy_output](\screenshots\azure_policy_output.png)
+![azure_policy_output](https://github.com/A-Janad/nd082-Azure-Cloud-DevOps-Starter-Code/project/starter_files/screenshots/azure_policy_output.png)
 
 **Create Resource Group Output**
 You should see something like the screenshot below:
