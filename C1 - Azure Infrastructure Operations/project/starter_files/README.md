@@ -91,7 +91,8 @@ Run packer file
     cd terraform/
     terraform init
     terraform plan -out solution.plan
-After running the plan you should see the resources that will be built
+    terraform apply -auto-approve
+
 
 ### Output
 **Azure Policy Output**
@@ -103,3 +104,14 @@ You should see something like the screenshot below:
 You should see something like the screenshot below:
 
 ![resource_group_output](\screenshots\resource_group_output.png)
+
+
+**Terraform plan output**
+After running the plan you should see the resources that will be built:
+
+![resource_group_output](\screenshots\terraform_plan_output.png)
+
+**Terraform apply output**
+After running apply you should see the terraform output:
+
+![resource_group_output](\screenshots\terraform_plan_output.png)
