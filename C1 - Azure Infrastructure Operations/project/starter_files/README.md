@@ -18,10 +18,10 @@ For this project, you will write a Packer template and a Terraform template to d
 
 ### Instructions
 
-1- Clone this repository
+**1- Clone this repository**
     git clone https://github.com/A-Janad/nd082-Azure-Cloud-DevOps-Starter-Code 
 
-2- Create an Azure Policy
+**2- Create an Azure Policy**
 
 Log into your Azure account
 
@@ -37,15 +37,7 @@ If it works you should be able to view the assigned policy using:
 
     az policy assignment list
 
-
-
-### Output
-**Azure Policy Output**
-You should see something like the screenshot below:
-![azure_policy_output](\screenshots\azure_policy_output.png)
-
-
-**Create Service Principle**
+**3- Create Service Principle**
 
     az ad sp create-for-rbac --query "{client_id:appid, client_secret:password, tenant_id: tenant}"
 
@@ -64,17 +56,50 @@ This command will output 4 values:
   "password": "0000-0000-0000-0000-000000000000",
   
   "tenant": "00000000-0000-0000-0000-000000000000"
-  
+
 }
 
 ***Note*** You need next to map these values to the variables.json 
 
-**Create Resource Group**
+**4- Create Resource Group**
 
     az group create -l "LOCATION" -n "RESOURCE_GROUP_NAME" --tags "udacity"
 
 ***NOTE*** change "LOCATION" string to your location, add a new value for "RESOURCE_GROUP_NAME" 
 
+**4- Create a variables.json file and update the values provided by the above steps**
+
+variables.json
+
+{
+  "client_id": "",
+  "client_secret": "",
+  "subscription_id": "",
+  "tenant_id": "",
+  "resource_group_name": "",
+  "image_name": "",
+  "location": ""
+}
+
+
+**5- Deploy your packer image**
+Run packer file
+
+    packer build -var-file="variables.json" ./packer/server.json
+
+**6- Deploy your infraustructure with Terraform**
+    cd terraform/
+    terraform init
+    terraform plan -out solution.plan
+After running the plan you should see the resources that will be built
+
+### Output
+**Azure Policy Output**
 You should see something like the screenshot below:
 
-![azure_policy_output](\screenshots\resource_group_output.png)
+![azure_policy_output](\screenshots\azure_policy_output.png)
+
+**Create Resource Group Output**
+You should see something like the screenshot below:
+
+![resource_group_output](\screenshots\resource_group_output.png)
