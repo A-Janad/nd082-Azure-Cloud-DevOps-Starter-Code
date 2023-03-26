@@ -105,20 +105,22 @@ Run packer file
 **Azure Policy Output**
 You should see something like the screenshot below:
 
-![azure_policy_output](https://github.com/A-Janad/nd082-Azure-Cloud-DevOps-Starter-Code/project/starter_files/screenshots/azure_policy_output.png)
+<img width="503" alt="azure_policy_output" src="https://user-images.githubusercontent.com/126161000/226779434-6d3cf4ed-bf34-4cbf-9f9f-6177648ca193.png">
 
 **Create Resource Group Output**
 You should see something like the screenshot below:
 
-![resource_group_output](\screenshots\resource_group_output.png)
+<img width="599" alt="resource_group_output" src="https://user-images.githubusercontent.com/126161000/226779488-6452894a-8bd4-4a35-8f2b-6fd1e01636d9.png">
 
 
 **Terraform plan output**
 After running the plan you should see the resources that will be built:
 
-![resource_group_output](\screenshots\terraform_plan_output.png)
+<img width="802" alt="terraform_plan_output" src="https://user-images.githubusercontent.com/126161000/226779589-565eb290-1fc9-49e7-bc8e-d55f6ed3daeb.png">
+
 
 **Terraform apply output**
 After running apply you should see the terraform output:
 
-![resource_group_output](\screenshots\terraform_apply_output.png)
+<img width="960" alt="terraform_apply_output" src="https://user-images.githubusercontent.com/126161000/226779614-6bae18b5-df51-4fc1-8411-507f92ca5527.png">
+
