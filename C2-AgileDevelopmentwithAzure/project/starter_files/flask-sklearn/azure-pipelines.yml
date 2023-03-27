@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: '21347db0-e426-46ac-b8a8-cb3f9fee02da'
   
   # Web app name
-  webAppName: 'jose-flaskpipelines'
+  webAppName: 'demo-udacity-2'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'jose-flaskpipelines'
+  environmentName: 'demo-udacity-2'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
